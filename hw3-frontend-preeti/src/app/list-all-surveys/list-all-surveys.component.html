@@ -1,0 +1,54 @@
+<html>
+  <h2>
+    <div class="w3-container allSurTitle" id="home">
+      LIST OF ALL SURVEYS
+    </div>
+</h2>
+  <body>
+    <!-- Table to list all the names of the students who has completed the survey -->
+    <br>
+    <h2>Student's Details</h2>
+    <table id="surveys">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Street Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Date Of Survey</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Liking</th>
+        <th>Source Of Uni</th>
+        <th>Likelihood</th>
+        <th>Comments</th>
+    </tr>
+    <tbody>
+      <tr *ngFor ="let student of nameStudents">
+          <td> {{ student.firstName}}</td>
+          <td> {{ student.lastName}}</td>
+          <td> {{ student.streetAddress}}</td>
+          <td> {{ student.city}}</td>
+          <td> {{ student.state}}</td>
+          <td> {{ student.zip}}</td>
+          <td> {{ student.dateOfSurvey}}</td>
+          <td> {{ student.phone}}</td>
+          <td> {{ student.email}}</td>
+          <th> {{ student.liking}}</th>
+          <td> {{ student.likelihood}}</td>
+          <td> {{ student.sourceOfUni}}</td>
+          <td> {{ student.comment}}</td>
+          <!-- <th> {{ student.comments}}</th> -->
+      </tr>
+  </tbody> 
+       
+    </table>
+    <br>
+  </body>
+   <!-- footer with a link to the home page -->
+   <footer class="footer w3-center w3-light-grey">
+    <a href="#" class="toTop w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Go To
+        HomePage</a>
+</footer>
+</html>

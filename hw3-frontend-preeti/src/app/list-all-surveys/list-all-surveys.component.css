@@ -1,0 +1,70 @@
+/*External style sheet for list of students*/
+@media all {
+    html {
+        background-attachment: fixed;
+    }
+}
+
+a {
+    text-indent: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: justify;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    min-height: 700px;
+    line-height: 1;
+    background-color: #ffcc33;
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+table {
+    margin: 10px auto;
+    font-size: 14pt;
+    table-layout: fixed;
+    border-collapse: inherit;
+    text-align: center;
+}
+
+td {
+    height: 50px;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #006633;
+    color: #ffcc33;
+    height: 30px;
+    width: 300px;
+}
+
+tr {
+    background-color: #006633;
+}
+
+.required {
+    color: red;
+}
+
+a:hover {
+    color: #ffcc33;
+}
+
+.allSurTitle {
+    text-align: center;
+    background-color: #006633;
+    padding: 20px;
+}
+
+a:active {
+    color: #ffcc33;
+}
+
+footer{
+    background-color: #006633;
+}

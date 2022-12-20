@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="=en">
+<!--This is a  Survey page that allows prospective students to provide
+    feedback about their campus visit.-->
+
+<head>
+    <title>Student Survey Form!</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stlylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+
+<body>
+    <div class="containerBox w3-container surveyCont">
+        <div class="form">
+            <h5>Survey data of {{ survey.firstName }} {{ survey.lastName }}</h5>
+            <div class="midForm" *ngIf="isDataAvailable">
+                <table class="displayData">
+
+                    <!-- Name division -->
+                    <tr>
+                        <th>First Name</th>
+                        <td>{{ survey.firstName }}</td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td>{{ survey.lastName }}</td>
+                    </tr>
+                    <!-- Address division -->
+                    <tr>
+                        <th>Street Address</th>
+                        <td>{{ survey.streetAddress }}</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <th>City</th>
+                        <td>{{ survey.city }}</td>
+                    </tr>
+                    <tr>
+                        <th>State</th>
+                        <td>{{ survey.state }}</td>
+                    </tr>
+                    <tr>
+                        <th>Zip Code</th>
+                        <td>{{ survey.zip }}</td>
+                    <!-- Contact division -->
+                    <tr>
+                        <th>Telephone Number</th>
+                        <td>{{ survey.phone }}</td>
+                    </tr>
+                    <tr>
+                        <th>Email Address</th>
+                        <td>{{ survey.email }}</td>
+                    </tr>
+                    <!-- Survey division -->
+                    <tr>
+                        <th>Date of Survey</th>
+                        <td>{{ survey.dateOfSurvey }}</td>
+                    </tr>
+                    <!-- non-mandatory division -->
+
+                    <!-- Like division -->
+                    <tr>
+                        <th>What do you liked most about the campus?</th>
+                        <td>{{ survey.liked }}</td>
+                    </tr>
+                    <!-- Interest division -->
+                    <tr>
+                        <th>How you became interested in the university?</th>
+                        <td>{{ survey.interested }}</td>
+                    </tr>
+                    <!-- Recommendation division -->
+                    <tr>
+                        <th>How will you recommend this school to other prospective students?</th>
+                        <td>{{ survey.recommend }}</td>
+                    </tr>
+                    <!-- Comment division -->
+                    <tr>
+                        <th>Any Comment or Suggestion</th>
+                        <td>{{ survey.comment }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- footer with a link to the home page -->
+        <footer class="footer w3-center w3-light-grey">
+            <a href="#" class="toTop w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Go To HomePage</a>
+        </footer>
+    </div>
+</body>
+
+</html>

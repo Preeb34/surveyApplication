@@ -1,0 +1,139 @@
+/* Styling the Body element i.e. Color, Font, Alignment, background */
+body {
+	color: white;
+	background-image: url("./assets/images/gmustu.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #FFCC33;
+	font-family: Verdana;
+	text-align: center;
+}
+
+/* form heading */
+h1 {
+	color: #FFCC33;
+	text-shadow: 2px 2px #FFCC33;
+	font-family: consolas;
+
+}
+
+p {
+	line-height: 20px !important;
+}
+
+.w3-container {
+	height: auto;
+	margin: auto;
+	/* all around box shadow --> */
+	box-shadow: 0 0 10px #FFCC33, 0px -10px 5px #FFCC33;
+}
+/* main hearder*/
+.header {
+	min-height: 100px;
+	background-color: whitesmoke;
+	border: 5px solid #006633;
+	box-shadow: 0px 0px 15px 006633;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	box-shadow: 0 0 10px #FFCC33, 0px -10px 5px #FFCC33;
+}
+
+.header img {
+	height: 100px;
+	margin: 10px 0px 10px 50px;
+	border-radius: 20px;
+}
+
+.surveyHeadLeft {
+	color: white;
+	background-color: #006633;
+	text-align: center;
+	margin: 0px 80px 10px 0px;
+}
+
+.surveyHeadLeft a {
+	background-color: #006633;
+	text-decoration: none;
+	width: 50%;
+	padding: 10px 30px;
+	color: white;
+}
+
+.surveyHeadLeft :hover {
+	background-color: #FFCC33;
+	color: #006633;
+}
+/* Footer*/
+.footer {
+	padding: 40px;
+	box-shadow: 0 0 10px #FFCC33;
+}
+
+.toTop {
+	text-align: center;
+	color: #FFCC33;
+}
+/* Madatory part of form*/
+.firstPart {
+
+	color: #FFCC33;
+	padding: 10px;
+
+}
+
+.surveyCont {
+	display: flex;
+	flex-direction: column;
+}
+
+.form {
+
+	padding: 10px;
+
+}
+
+.form h5 {
+	text-align: center;
+}
+
+.midForm {
+	background-color: #FFFF;
+	color: #006633;
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 30px 20px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.surveyDate {
+	display: block;
+	width: 100%;
+}
+
+.topForm {
+	min-height: 420px;
+
+}
+/* Submit and Cancel button*/
+
+button {
+	background-color: #006633;
+	border: 1px solid #FFCC33;
+	border-radius: 2px;
+	font-family: inherit;
+	font-size: 21px;
+	color: white;
+	display: block;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+/* Styling Button */
+button:hover {
+	box-shadow: 0 12px 16px 0 #FFCC33, 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
